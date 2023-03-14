@@ -11,4 +11,4 @@ try:
     from tinygrad.lazy import Device
 
 except ModuleNotFoundError as moduleNotFound:
-    print(f'Found that `gradio` is not installed, try installing it first')
+    print(f'Found that `gradio` is not installed')
