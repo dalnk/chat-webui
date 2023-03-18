@@ -4,7 +4,7 @@ try:
     import sys, argparse, math, platform
     import numpy as np
     from tqdm import tqdm
-    np.set_printoptions(linewidth=200)
+    np.set_printoptions(linewidth=100)
     from typing import Optional
 
     from tinygrad.helpers import getenv, DEBUG
