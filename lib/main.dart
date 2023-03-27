@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
-import 'dart:ffi' as ffi;
+import 'dart:ffi';
+import 'dart:io';
 
-typedef HelloFunc = ffi.Void Function();
-typedef Hello = void Function();
+final DynamicLibrary nativeAddLib = Platform.isAndroid
+    ? DynamicLibrary.open('alpaca.so')
+    : DynamicLibrary.process();
 
 void main() {
-  var library = ffi.DynamicLibrary.open("alpaca.so")
-            .lookup<ffi.NativeFunction<HelloFunc>>('hello')
-            .asFunction<Hello>();
+  final void Function() hello = nativeAddLib
+    .lookup<NativeFunction>('hello')
+    .asFunction();
 
   // Call the printf function.
   library.call();
