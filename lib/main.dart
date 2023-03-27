@@ -1,6 +1,19 @@
 import 'package:flutter/material.dart';
+import 'dart:ffi' as ffi;
 
-void main() => runApp(MyApp());
+typedef HelloFunc = ffi.Void Function();
+typedef Hello = void Function();
+
+void main() {
+  var library = ffi.DynamicLibrary.open("alpaca.so")
+            .lookup<ffi.NativeFunction<HelloFunc>>('hello')
+            .asFunction<Hello>();
+
+  // Call the printf function.
+  library.call();
+  runApp(MyApp());
+}
+
 
 class MyApp extends StatelessWidget {
   @override
