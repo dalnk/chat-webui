@@ -8,7 +8,7 @@ final DynamicLibrary nativeAddLib = Platform.isAndroid
 
 void main() {
   final void Function() hello = nativeAddLib
-    .lookup<NativeFunction>('hello')
+  .lookupFunction<NativeFunction,Function>(symbolName: "hello")
     .asFunction();
 
   // Call the printf function.
@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.orange,
       ),
-      home: MyHomePage(title: 'chatAlpaca'),
+      home: MyHomePage(title: 'superChat'),
     );
   }
 }
