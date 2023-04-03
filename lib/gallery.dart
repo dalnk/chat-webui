@@ -1,5 +1,5 @@
-import FlutterStateNotificationsPlugin 
-  
+import 'package:flutter/material.dart';
+
 class GalleryApp extends StatefulWidget {
     const GalleryApp({Key? key}) : super(key);
     
