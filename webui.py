@@ -1,6 +1,6 @@
 try:
     import gradio as gr
-    import os
+
     import sys, argparse, math, platform
     import numpy as np
     from tqdm import tqdm
