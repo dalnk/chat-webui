@@ -3,4 +3,4 @@ focusing on the LLaMA/Alpaca/Vicuna model but hopefully expanding to other model
 
 Alpaca now runs on android! its slow but useable
 
-Ideally supporting Vicuña and StableLM
+Ideally supporting Vicuña and StableLM lm
