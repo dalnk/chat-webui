@@ -12,6 +12,7 @@ class _GalleryApp extends State<GalleryApp> with FlutterStateNotificationsPlugin
     final List<String> galleryItems = [
         "Image1.jpg",
         "Image2.jpg" ,
+        "Image3.jpg" ,
      ];
       
       void showNotification(BuildContext context, String message) {
