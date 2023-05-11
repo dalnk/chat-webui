@@ -2,6 +2,6 @@
 
 extern "C" {
   void hello() {
-    std::cout << "Hello from llama!" << std::endl;
+    std::cout << "Hello from vicuna!" << std::endl;
   }
 }
