@@ -6,6 +6,6 @@ extern "C" {
   }
 
   void importONNX() {
-    std::cout << "Importing model" << std::endl;
+    std::cout << "Importing ggml model" << std::endl;
   }
 }
