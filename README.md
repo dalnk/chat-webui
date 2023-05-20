@@ -1,5 +1,5 @@
 # chat-ui
-focusing on the LLaMA/Alpaca/Vicuna/Koala/Dolly model but hopefully expanding to other models soon. Thank you to @geohot for making tinygrad and pytorch for ONNX conversions. Need to use quantized files
+focusing on the LLaMA/Alpaca/Vicuna/Koala/Dolly model but hopefully expanding to other models soon. Thank you to @geohot for making tinygrad and pytorch for ONNX conversions. Need to use quantized files like q4 ggml
 
 Alpaca now runs on android! Vicuna and StableLM soon
 Using huggingface chat for this as well
