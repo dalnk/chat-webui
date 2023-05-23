@@ -8,5 +8,7 @@ extern "C" {
   void importONNX() {
     // import model
     std::cout << "Importing ggml model" << std::endl;
+    std::cout << "Importing ggml model" << std::endl;
+    std::cout << "Importing ggml model" << std::endl;
   }
 }
