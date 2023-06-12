@@ -4,4 +4,4 @@ focusing on the Alpaca/Vicuna/Koala/Dolly model but hopefully expanding to other
 Alpaca now runs on android! Vicuna and StableLM work now as well
 Using huggingface chat for this as well, this is made irrelevant by MLC-llm there's an android complied version out for snapdragon with latest OpenCL for now
 
-Ideally supporting Vicuña and StableLM. Theres a working version 
+Ideally supporting Vicuña and StableLM. Theres a working version on MLC for snapdragon chips
