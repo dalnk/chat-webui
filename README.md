@@ -3,4 +3,4 @@ focusing on the Alpaca/Vicuna/Koala/Dolly model but hopefully expanding to other
 
 Alpaca now runs on android! Vicuna and StableLM work now as well. MLC-llm there's an android complied version out for snapdragon with latest OpenCL for now, need to figure out how to plug it all together for pixel Tensor chips
 
-OpenLLM on pip is probably a good backend for this
+OpenLLM on pip is probably a good backend for this on a server and the android version works now on snapdragon chips. need to test more with tensor chips there might be something we can do about the OpenCL versions
